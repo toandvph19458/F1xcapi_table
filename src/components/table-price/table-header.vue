@@ -167,6 +167,7 @@ export default defineComponent({
 	height: max-content !important;
 	max-width: 1760px;
 	margin: 0 auto;
+	background-color: transparent;
 
 	.header-marquee {
 		padding: 12px;
