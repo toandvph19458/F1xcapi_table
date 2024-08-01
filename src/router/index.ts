@@ -13,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
 				path: "/table-1",
 				component: () => import("../views/table-price/table-1.vue"),
 			},
+			{
+				path: "/table-3",
+				component: () => import("../views/table-price/table-3.vue"),
+			},
 		],
 	},
 ];
