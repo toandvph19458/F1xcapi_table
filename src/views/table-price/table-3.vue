@@ -91,15 +91,17 @@ export default defineComponent({
 <style scoped lang="scss">
 .wrapper {
 	background-color: #090618;
+    
+    .table>:not(caption)>*>* {
+        background-color: #181336 !important;
+    }
 
 	.tabel__inner {
 		max-width: 1760px;
 		margin: 0 auto;
-	}
-
-	.table__price .table-dark {
+        .table__price .table-dark {
 		background-color: #181336 !important;
-		border-radius: 12px;
+		border-radius: 12px !important;
 		margin-bottom: 0;
 	}
 
@@ -127,6 +129,7 @@ export default defineComponent({
 
 	.table__price .table-dark.table-striped thead tr th:first-child {
 		border-left: none !important;
+        border-radius: 12px 0;
 	}
 
 	.table__price .table-dark.table-striped tbody tr td:first-child {
@@ -135,10 +138,17 @@ export default defineComponent({
 
 	.table__price .table-dark.table-striped thead tr th:last-child {
 		border-right: none !important;
+        border-radius: 0px 12px;
 	}
 
 	.table__price .table-dark.table-striped tbody tr td:last-child {
 		border-right: none !important;
 	}
+    .table__price .table-dark .table-striped tbody tr:last-child >td:first-child{
+       border-radius: 12px;
+    }
+	}
+    
+
 }
 </style>
