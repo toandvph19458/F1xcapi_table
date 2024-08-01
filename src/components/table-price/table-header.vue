@@ -163,8 +163,8 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .header {
-	width: 100%;
 	height: max-content !important;
+	width: 100%;
 	max-width: 1760px;
 	margin: 0 auto;
 	background-color: transparent;
