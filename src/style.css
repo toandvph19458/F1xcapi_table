@@ -382,7 +382,15 @@ fw-7 {
 .text-warning {
   color: #FFE81E !important;
 }
-
+.text-center{
+  text-align: center !important;
+}
+.text-right{
+  text-align: right !important;
+}
+.text-left{
+  text-align: left !important;
+}
 /*=============================
 	:: 4.1 Class Background	
 ===============================*/
@@ -406,7 +414,9 @@ fw-7 {
 .bg-white {
   background-color: var(--white-bg) !important;
 }
-
+.bg-higlight{
+  background-color: #221A50 !important;
+}
 /*=============================
 	:: 4.3 Class Button	
 ===============================*/
