@@ -44,7 +44,7 @@
                             <td colspan="16">DẦU ĐẬU TƯƠNG</td>
                         </tr>
                         <tr>
-                            <td>ZLEQ24</td>
+                            <td>ZLEQ24*</td>
                             <td>Dầu đậu tương 10/24</td>
                             <td class="text-right text-success">71.01</td>
                             <td class="text-right text-success">+0.06%</td>
@@ -146,7 +146,22 @@ export default defineComponent({
     .tabel__inner {
         max-width: 1760px;
         margin: 0 auto;
-
+        .table-bordered {
+            thead{
+                tr{
+                    th{
+                        border: 1px solid #1C163F;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        border: 1px solid #1C163F;
+                    }
+                }
+            }
+        }
         .table__price .table-dark {
             background-color: #181336 !important;
             border-radius: 12px !important;
@@ -159,7 +174,6 @@ export default defineComponent({
 
         .table__price .table-dark.table-striped thead tr th {
             border-top: none;
-            border-bottom: none;
             font-size: 12px;
             font-weight: 600;
             line-height: 16px;

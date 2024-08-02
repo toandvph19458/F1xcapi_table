@@ -90,63 +90,79 @@ export default defineComponent({
 
 <style scoped lang="scss">
 .wrapper {
-	background-color: #090618;
+    background-color: #090618;
 
-	.table > :not(caption) > * > * {
-		background-color: #181336 !important;
-	}
+    .table> :not(caption)>*>* {
+        background-color: #181336 !important;
+    }
 
-	.tabel__inner {
-		max-width: 1760px;
-		margin: 0 auto;
-		.table__price .table-dark {
-			background-color: #181336 !important;
-			border-radius: 12px !important;
-			margin-bottom: 0;
-		}
+    .tabel__inner {
+        max-width: 1760px;
+        margin: 0 auto;
+        .table-bordered {
+            thead{
+                tr{
+                    th{
+                        border: 1px solid #1C163F;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        border: 1px solid #1C163F;
+                    }
+                }
+            }
+        }
+        .table__price .table-dark {
+            background-color: #181336 !important;
+            border-radius: 12px !important;
+            margin-bottom: 0;
+        }
 
-		.table__price .table-dark.table-striped tbody tr:nth-of-type(odd) {
-			background-color: #1c163f !important;
-		}
+        .table__price .table-dark.table-striped tbody tr:nth-of-type(odd) {
+            background-color: #1c163f !important;
+        }
 
-		.table__price .table-dark.table-striped thead tr th {
-			border-top: none;
-			border-bottom: none;
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 16px;
-		}
+        .table__price .table-dark.table-striped thead tr th {
+            border-top: none;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+        }
 
-		.table__price .table-dark.table-striped tbody tr td {
-			border-bottom: none;
-		}
+        .table__price .table-dark.table-striped tbody tr td {
+            border-bottom: none;
+        }
 
-		.table__price .table-dark.table-striped tbody tr td {
-			font-size: 12px;
-			font-weight: 400;
-			line-height: 16px;
-		}
+        .table__price .table-dark.table-striped tbody tr td {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+        }
 
-		.table__price .table-dark.table-striped thead tr th:first-child {
-			border-left: none !important;
-			border-radius: 12px 0;
-		}
+        .table__price .table-dark.table-striped thead tr th:first-child {
+            border-left: none !important;
+            border-radius: 12px 0;
+        }
 
-		.table__price .table-dark.table-striped tbody tr td:first-child {
-			border-left: none !important;
-		}
+        .table__price .table-dark.table-striped tbody tr td:first-child {
+            border-left: none !important;
+        }
 
-		.table__price .table-dark.table-striped thead tr th:last-child {
-			border-right: none !important;
-			border-radius: 0px 12px;
-		}
+        .table__price .table-dark.table-striped thead tr th:last-child {
+            border-right: none !important;
+            border-radius: 0px 12px;
+        }
 
-		.table__price .table-dark.table-striped tbody tr td:last-child {
-			border-right: none !important;
-		}
-		.table__price .table-dark .table-striped tbody tr:last-child > td:first-child {
-			border-radius: 12px;
-		}
-	}
+        .table__price .table-dark.table-striped tbody tr td:last-child {
+            border-right: none !important;
+        }
+
+        .table__price .table-dark .table-striped tbody tr:last-child>td:first-child {
+            border-radius: 12px;
+        }
+    }
 }
 </style>
