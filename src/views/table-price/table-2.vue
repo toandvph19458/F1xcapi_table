@@ -119,7 +119,9 @@
                 </table>
             </div>
             <div class="chart__right">
-                <Bar :data="chartData" :options="chartOptions"/>
+                <!-- <Bar :data="chartData" :options="chartOptions"/> -->
+                <Line :data="chartData" :options="chartOptions" />
+                <Card/>
             </div>
         </div>
     </div>
@@ -128,28 +130,113 @@
 <script lang="ts">
 import { defineComponent, ref, watch } from "vue";
 import TableHeader from "../../components/table-price/table-header.vue";
-import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+import { Line } from 'vue-chartjs'
+import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, PointElement, CategoryScale, LinearScale } from 'chart.js'
+import Card from "../../components/table-price/card.vue";
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+ChartJS.register(Title, Tooltip, Legend, LineElement, PointElement, CategoryScale, LinearScale)
+function getRandomData(length:number) {
+    return Array.from({ length }, () => Math.floor(Math.random() * 100));
+}
 export default defineComponent({
     name: "tabel-2",
     components: {
         TableHeader,
-        Bar
+        Line,
+        Card
     },
    
     setup(props, ctx) { 
         const chartData = ref({
-            labels: ['January', 'February', 'March'],
-            datasets: [{ data: [40, 20, 12] }]
+            labels: Array.from({ length: 15 }, (_, i) => (i + 1).toString()),
+            datasets: [
+                {
+                    label: 'Nông sản ',
+                    backgroundColor: 'rgba(66, 165, 245, 0.2)',
+                    borderColor: '#42A5F5',
+                    pointBackgroundColor: '#42A5F5',
+                    pointRadius: 0, 
+                    borderWidth: 2,
+                    data: getRandomData(15),
+                },
+                {
+                    label: 'Năng lượng',
+                    backgroundColor: '#5575C2',
+                    borderColor: '#5575C2',
+                    pointBackgroundColor: '#5575C2',
+                    pointRadius: 0, 
+                    borderWidth: 2,
+                    data: getRandomData(15)
+                },
+                {
+                    label: 'Kim loại',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: '#FF6384',
+                    pointBackgroundColor: '#FF6384',
+                    pointRadius: 0, 
+                    borderWidth: 2,
+                    data: getRandomData(15)
+                },
+                {
+                    label: 'Kim loại',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: '#FF6384',
+                    pointBackgroundColor: '#FF6384',
+                    pointRadius: 0, 
+                    borderWidth: 2,
+                    data: getRandomData(15)
+                },
+                {
+                    label: 'Kim loại',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: '#FF6384',
+                    pointBackgroundColor: '#FF6384',
+                    pointRadius: 0, 
+                    borderWidth: 2,
+                    data: getRandomData(15)
+                },
+            ]
         });
 
-        const chartOptions = ref({
+        const chartOptions = ref<any>({
             responsive: true,
             scales: {
+                x: {
+                    beginAtZero: true,
+                    grid: {
+                        drawBorder: true,
+                        color: function(context:any) {
+                            const chart = context.chart;
+                            const { ctx, chartArea } = chart;
+
+                            if (!chartArea) {
+                                return;
+                            }
+
+                            const gradient = ctx.createLinearGradient(chartArea.left, 0, chartArea.right, 0);
+                            gradient.addColorStop(0, 'rgba(118, 108, 173, 0.00)');
+                            gradient.addColorStop(0.5, 'rgba(118, 108, 173, 0.30)');
+                            gradient.addColorStop(1, 'rgba(118, 108, 173, 0.00)');
+
+                            return gradient;
+                        }
+                    }
+                },
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    grid: {
+                        drawBorder: true,
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        padding: 20,
+                        usePointStyle: true,
+                        pointStyle: 'circle'
+                    }
                 }
             }
         });
@@ -176,6 +263,9 @@ export default defineComponent({
         gap: 24px;
         table{
             width: 100%;
+        }
+        .chart__right{
+            width: 30%;
         }
         .table-bordered {
                 thead {
