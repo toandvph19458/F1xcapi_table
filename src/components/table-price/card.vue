@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="card__chart">
-            <Bar :data="chartData" :options="chartOptions" />
+            <Bar :data="chartData" :options="chartOptions" style="height: 100px; width: 251px;"/>
         </div>
     </div>
 </template>

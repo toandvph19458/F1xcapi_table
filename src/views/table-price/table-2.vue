@@ -12,7 +12,7 @@
                             <th class="text-right">OI</th>
                             <th class="text-right">KL</th>
                             <th class="text-center" colspan="2">CHÀO MUA</th>
-                            <th class="text-center bg-higlight" colspan="3">KHỚP LỆNH</th>
+                            <th class="text-center" colspan="3" style="background-color: #221A50 !important;">KHỚP LỆNH</th>
                             <th class="text-center" colspan="2">CHÀO BÁN</th>
                             <th class="text-center">Thanh toán</th>
                             <th class="text-center">Mở cửa</th>
@@ -27,9 +27,9 @@
                             <th class="text-center"></th>
                             <th class="text-right">Giá</th>
                             <th class="text-right">KL</th>
-                            <th class="text-right">Giá</th>
-                            <th class="text-right">KL</th>
-                            <th class="text-right">+/-</th>
+                            <th class="text-right" style="background-color: #221A50 !important;">Giá</th>
+                            <th class="text-right" style="background-color: #221A50 !important;">KL</th>
+                            <th class="text-right" style="background-color: #221A50 !important;">+/-</th>
                             <th class="text-right">Giá</th>
                             <th class="text-right">KL</th>
                             <th></th>
@@ -44,15 +44,36 @@
                             <td colspan="16">DẦU ĐẬU TƯƠNG</td>
                         </tr>
                         <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
+                        <tr>
                             <td>ZLEQ24*</td>
                             <td>Dầu đậu tương 10/24</td>
                             <td class="text-right text-success">71.01</td>
                             <td class="text-right text-success">+0.06%</td>
                             <td class="text-center text-success">Mua mạnh</td>
                             <td class="text-center text-danger">Bán mạnh</td>
-                            <td class="text-center text-danger">Bán</td>
-                            <td class="text-center text-success">Mua mạnh</td>
-                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
@@ -62,15 +83,15 @@
                             <td class="text-center text-success">Mua</td>
                         </tr>
                         <tr>
-                            <td>ZLEQ24</td>
+                            <td>ZLEQ24*</td>
                             <td>Dầu đậu tương 10/24</td>
                             <td class="text-right text-success">71.01</td>
                             <td class="text-right text-success">+0.06%</td>
                             <td class="text-center text-success">Mua mạnh</td>
                             <td class="text-center text-danger">Bán mạnh</td>
-                            <td class="text-center text-danger">Bán</td>
-                            <td class="text-center text-success">Mua mạnh</td>
-                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
@@ -80,15 +101,15 @@
                             <td class="text-center text-success">Mua</td>
                         </tr>
                         <tr>
-                            <td>ZLEQ24</td>
+                            <td>ZLEQ24*</td>
                             <td>Dầu đậu tương 10/24</td>
-                            <td class="text-right text-success">1,062.966</td>
-                            <td class="text-right text-danger">-1.48%</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
                             <td class="text-center text-success">Mua mạnh</td>
                             <td class="text-center text-danger">Bán mạnh</td>
-                            <td class="text-center text-danger">Bán</td>
-                            <td class="text-center text-success">Mua mạnh</td>
-                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
@@ -98,15 +119,15 @@
                             <td class="text-center text-success">Mua</td>
                         </tr>
                         <tr>
-                            <td>ZLEQ24</td>
+                            <td>ZLEQ24*</td>
                             <td>Dầu đậu tương 10/24</td>
-                            <td class="text-right text-success">1,432.373</td>
-                            <td class="text-right text-warning">0.06%</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
                             <td class="text-center text-success">Mua mạnh</td>
                             <td class="text-center text-danger">Bán mạnh</td>
-                            <td class="text-center text-danger">Bán</td>
-                            <td class="text-center text-success">Mua mạnh</td>
-                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
@@ -115,6 +136,7 @@
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -281,6 +303,19 @@ export default defineComponent({
                         td {
                             border: 1px solid #1C163F;
                         }
+                        .hover__img{
+                            position: relative;
+                            div{
+                                display: none;
+                                position: absolute;
+                            }
+                            &:hover{
+                                div{
+                                    display: block;
+                                }
+                            }
+                        }
+                        
                     }
                 }
             }
@@ -290,7 +325,6 @@ export default defineComponent({
                 border-radius: 12px !important;
                 margin-bottom: 0;
             }
-
             .table__price .table-dark.table-striped tbody tr:nth-of-type(odd) {
                 background-color: #1c163f !important;
             }
