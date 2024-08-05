@@ -23,15 +23,48 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { Bar } from 'vue-chartjs';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, Title, Tooltip, Legend, ChartData } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, Title, Tooltip, Legend);
 
-function getRandomData(length:number) {
-    return Array.from({ length }, () => Math.floor(Math.random() * 100));
-}
+// Custom plugin to change line color based on y value
+const customLineColorPlugin = {
+    id: 'customLineColor',
+    afterDatasetsDraw(chart:any) {
+        const { ctx,  scales: { x, y } } = chart;
+        chart.data.datasets.forEach((dataset:any, datasetIndex:any) => {
+            if (dataset.type === 'line') {
+                const meta = chart.getDatasetMeta(datasetIndex);
+                ctx.save();
+                meta.data.forEach((point:any, index:any) => {
+                    if (index > 0) {
+                        const previousPoint = meta.data[index - 1];
+                        const xPos = point.x;
+                        const yPos = point.y;
+                        const prevXPos = previousPoint.x;
+                        const prevYPos = previousPoint.y;
 
+                        ctx.beginPath();
+                        ctx.moveTo(prevXPos, prevYPos);
+                        ctx.lineTo(xPos, yPos);
 
+                        if (y.getPixelForValue(0) < yPos || y.getPixelForValue(0) < prevYPos) { // Change color if y value is less than 0
+                            ctx.strokeStyle = 'red';
+                        } else {
+                            ctx.strokeStyle = dataset.borderColor;
+                        }
+
+                        ctx.stroke();
+                    }
+                });
+                ctx.restore();
+            }
+        });
+    }
+};
+
+// Register the custom plugin
+ChartJS.register(customLineColorPlugin);
 
 export default defineComponent({
     name: "card",
@@ -40,21 +73,21 @@ export default defineComponent({
     },
     setup(props, ctx) {
         const chartData = ref<any>({
-            labels: Array.from({ length: 15 }, (_, i) => (i + 1).toString()),
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
                 {
                     type: 'line',
                     label: 'Line Dataset',
+                    data: [65, 59, 80, 81, 56, -3, -4],
                     borderColor: 'rgb(75, 192, 192)',
-                    pointRadius: 0, 
                     borderWidth: 2,
-                    data: getRandomData(15),
+                    pointRadius: 0, 
                     fill: false
                 },
                 {
                     type: 'bar',
                     label: 'Bar Dataset',
-                    data: [1,2,3,4,5,6,5,6,2,1,4,1,1,2,3],
+                    data: [28, 48, 40, 19, 86, 27, 90],
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgb(75, 192, 192)',
                     borderWidth: 1
@@ -66,17 +99,18 @@ export default defineComponent({
             responsive: true,
             scales: {
                 x: {
-                    display: false // Ẩn nhãn trên trục x
+                    display: false 
                 },
                 y: {
-                    display: false, // Ẩn nhãn trên trục y
+                    display: false, 
                     beginAtZero: true
                 }
             },
             plugins: {
                 legend: {
-                    display: false // Ẩn nhãn của biểu đồ
-                }
+                    display: false 
+                },
+                customLineColor: {} 
             }
         });
 
