@@ -144,6 +144,110 @@
                             <td class="text-center text-success">Mua</td>
                             <td class="text-center text-success">Mua</td>
                         </tr>
+                        <tr>
+                            <td colspan="16">DẦU ĐẬU TƯƠNG</td>
+                        </tr>
+                        <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
+                        <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
+                        <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
+                        <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
+                        <tr>
+                            <td class="hover__img">ZLEQ24* <div>
+                                <img src="https://picsum.photos/200/200" alt="">
+                            </div></td>
+                            <td>Dầu đậu tương 10/24</td>
+                            <td class="text-right text-success">71.01</td>
+                            <td class="text-right text-success">+0.06%</td>
+                            <td class="text-center text-success">Mua mạnh</td>
+                            <td class="text-center text-danger">Bán mạnh</td>
+                            <td class="text-center text-danger" style="background-color: #221A50 !important;">Bán</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success" style="background-color: #221A50 !important;">Mua mạnh</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                            <td class="text-center text-success">Mua</td>
+                        </tr>
 
                     </tbody>
                 </table>

@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="card__chart">
-            <Bar :data="chartData" :options="chartOptions" style="height: 100px; width: 251px;"/>
+            <Bar :data="chartData" :options="chartOptions" style="height: 100px; width: 451px;"/>
         </div>
     </div>
 </template>
@@ -73,12 +73,12 @@ export default defineComponent({
     },
     setup(props, ctx) {
         const chartData = ref<any>({
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            labels: Array.from({ length: 15 }, (_, i) => (i + 1).toString()),
             datasets: [
                 {
                     type: 'line',
                     label: 'Line Dataset',
-                    data: [65, 59, 80, 81, 56, -3, -4],
+                    data: [65, 59, 80, 81, 56, -3, -4,6,7,8,9,10],
                     borderColor: 'rgb(75, 192, 192)',
                     borderWidth: 2,
                     pointRadius: 0, 
@@ -87,7 +87,7 @@ export default defineComponent({
                 {
                     type: 'bar',
                     label: 'Bar Dataset',
-                    data: [28, 48, 40, 19, 86, 27, 90],
+                    data: [28, 48, 40, 19, 86, 27, 90,65, 59, 80, 81, 56],
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgb(75, 192, 192)',
                     borderWidth: 1
