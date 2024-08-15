@@ -5,28 +5,16 @@
 
 		<div class="table-price">
 			<div class="table-price__list">
-				<div
-					v-for="k in 4"
-					:key="k"
-					class="table-price__card"
-				>
+				<div v-for="k in 4" :key="k" class="table-price__card">
 					<div class="table-price__card-header">
 						<div class="table-price_card-box">
-							<img
-								class="table-price__card-icon"
-								src="../../assets/img/icon/Illus.png"
-							/>
+							<img class="table-price__card-icon" src="../../assets/img/icon/Illus.png" />
 							<h4 class="table-price__card-title">NÔNG SẢN</h4>
 						</div>
 
 						<div class="table-price_card-k">
-							<Select
-								v-model="selectedCity"
-								:options="cities"
-								optionLabel="name"
-								placeholder="Select a City"
-								class="table-price_card-select"
-							/>
+							<Select v-model="selectedCity" :options="cities" optionLabel="name"
+								placeholder="Select a City" class="table-price_card-select" />
 						</div>
 					</div>
 
@@ -41,11 +29,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr
-									v-for="i in 10"
-									:key="i"
-									:class="{ active: i % 2 == 0 }"
-								>
+								<tr v-for="i in 10" :key="i" :class="{ active: i % 2 == 0 }">
 									<td>ZLEQ24</td>
 									<td>Dầu đậu tương 10/24</td>
 									<td class="text-right text-success">71.01</td>
@@ -99,6 +83,11 @@ export default defineComponent({
 			display: grid;
 			gap: 12px;
 			grid-template-columns: repeat(4, 1fr);
+
+			@media (max-width: 425px) {
+				grid-template-columns: 1fr;
+				padding: 0 12px;
+			}
 		}
 
 		.table-price__card {
@@ -107,6 +96,7 @@ export default defineComponent({
 			overflow: hidden;
 			padding-bottom: 24px;
 		}
+
 		.table-price__card-header {
 			padding: 24px 24px 0 24px;
 			display: flex;
@@ -114,23 +104,25 @@ export default defineComponent({
 			align-items: center;
 			justify-content: space-between;
 		}
+
 		.table-price_card-box {
 			display: flex;
 			gap: 12px;
 			align-items: center;
 		}
+
 		.table-price__card-icon {
 			width: 40px;
 			height: 40px;
 		}
+
 		.table-price__card-title {
 			font-size: 18px;
 			color: var(--white-text);
 			font-weight: 700;
 		}
 
-		.table-price_card-k {
-		}
+		.table-price_card-k {}
 
 		.table-price_card-select {
 			padding: 4px 8px;
@@ -170,7 +162,7 @@ export default defineComponent({
 				background-color: #100c26;
 			}
 
-			.table-striped > tbody > tr:nth-of-type(odd) {
+			.table-striped>tbody>tr:nth-of-type(odd) {
 				background-color: #100c26 !important;
 			}
 
