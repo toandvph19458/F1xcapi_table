@@ -292,6 +292,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
+                    tension: 0.4
                 },
                 {
                     label: 'Năng lượng',
@@ -300,7 +301,8 @@ export default defineComponent({
                     pointBackgroundColor: '#5575C2',
                     pointRadius: 0, 
                     borderWidth: 2,
-                    data: getRandomData(15)
+                    data: getRandomData(15),
+                    tension: 0.4
                 },
                 {
                     label: 'Kim loại',
@@ -309,7 +311,8 @@ export default defineComponent({
                     pointBackgroundColor: '#FF6384',
                     pointRadius: 0, 
                     borderWidth: 2,
-                    data: getRandomData(15)
+                    data: getRandomData(15),
+                    tension: 0.4
                 },
                 {
                     label: 'Kim loại',
@@ -318,7 +321,8 @@ export default defineComponent({
                     pointBackgroundColor: '#FF6384',
                     pointRadius: 0, 
                     borderWidth: 2,
-                    data: getRandomData(15)
+                    data: getRandomData(15),
+                    tension: 0.4
                 },
                 {
                     label: 'Kim loại',
@@ -327,7 +331,8 @@ export default defineComponent({
                     pointBackgroundColor: '#FF6384',
                     pointRadius: 0, 
                     borderWidth: 2,
-                    data: getRandomData(15)
+                    data: getRandomData(15),
+                    tension: 0.4
                 },
             ]
         });
