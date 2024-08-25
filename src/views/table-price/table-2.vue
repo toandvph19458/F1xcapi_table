@@ -292,7 +292,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
-                    tension: 0.4
+                    tension: 0.3
                 },
                 {
                     label: 'Năng lượng',
@@ -302,7 +302,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
-                    tension: 0.4
+                    tension: 0.3
                 },
                 {
                     label: 'Kim loại',
@@ -312,7 +312,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
-                    tension: 0.4
+                    tension: 0.3
                 },
                 {
                     label: 'Kim loại',
@@ -322,7 +322,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
-                    tension: 0.4
+                    tension: 0.3
                 },
                 {
                     label: 'Kim loại',
@@ -332,7 +332,7 @@ export default defineComponent({
                     pointRadius: 0, 
                     borderWidth: 2,
                     data: getRandomData(15),
-                    tension: 0.4
+                    tension: 0.3
                 },
             ]
         });
