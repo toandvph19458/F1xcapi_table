@@ -128,7 +128,7 @@ export default defineComponent({
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     .card__progress{
         .progress__title{
             h5{
@@ -168,6 +168,16 @@ export default defineComponent({
                 line-height: normal;
             }
         }
+    }
+}
+@media only screen and (min-width: 1210px) and (max-width: 1700px) {
+    .card__wrapper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 20px;
     }
 }
 </style>

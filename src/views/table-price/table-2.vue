@@ -488,4 +488,22 @@ export default defineComponent({
             }
     }
 }
+@media only screen and (min-width: 1210px) and (max-width: 1690px) {
+    .chart__right{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 1210px) {
+    .tabel__inner {
+        max-width: 1760px;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .chart__right{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+}
 </style>
